@@ -1,23 +1,93 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Readers' Haven | Contact</title>
-  <link rel="stylesheet" href="../styles/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Readers' Haven</title>
+    <link rel="stylesheet" href="../styles/style.css">
 </head>
 <body>
-  <header>
-    <h1>📚 Readers' Haven</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="collections.html">Collections</a>
-      <a href="membership.html">Membership</a>
-      <a href="services.html">Digital Services</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
-  <main><h2>Contact</h2><p>Coming soon.</p></main>
-  <footer>&copy; 2026 Readers' Haven Public Library</footer>
+
+    <header class="contact-header">
+        <h1>Readers' Haven</h1>
+        <p>Your Gateway to Knowledge</p>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="collections.html">Collections</a>
+            <a href="membership.html">Membership</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main class="contact-container">
+
+        <section class="contact-intro">
+            <h2>Contact Us</h2>
+            <p>
+                Have a question or suggestion?
+                We would love to hear from you.
+                Get in touch with Readers' Haven.
+            </p>
+        </section>
+
+        <section class="contact-content">
+
+            <div class="contact-details">
+                <h2>Get In Touch</h2>
+
+                <div class="contact-item">
+                    <h3>Our Address</h3>
+                    <p>Johar Town, Lahore, Pakistan</p>
+                </div>
+
+                <div class="contact-item">
+                    <h3>Phone Number</h3>
+                    <p>+92 300 1234567</p>
+                </div>
+
+                <div class="contact-item">
+                    <h3>Email Address</h3>
+                    <p>info@readershaven.com</p>
+                </div>
+
+                <div class="contact-item">
+                    <h3>Opening Hours</h3>
+                    <p>Monday - Saturday: 9 AM - 8 PM</p>
+                    <p>Sunday: 10 AM - 5 PM</p>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <h2>Send Us a Message</h2>
+
+                <form>
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name"
+                           name="name" placeholder="Enter your name" required>
+
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email"
+                           name="email" placeholder="Enter your email" required>
+
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message"
+                              rows="5" placeholder="Write your message here..."
+                              required></textarea>
+
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="contact-footer">
+        <p>&copy; 2026 Readers' Haven. All Rights Reserved.</p>
+    </footer>
+
 </body>
 </html>
