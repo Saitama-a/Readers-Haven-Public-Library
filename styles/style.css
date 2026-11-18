@@ -25,3 +25,30 @@ footer { text-align: center; padding: 1.2rem; background: #2d2a26; color: #ccc; 
   .card-grid { grid-template-columns: 1fr; }
   .hero h2 { font-size: 1.5rem; }
 }
+/* ===== MEMBERSHIP PAGE (feature/membership-page) ===== */
+.membership-intro { text-align: center; }
+
+.plan-card { text-align: center; border: 1px solid #e0d6c8; }
+.plan-card h3 { color: #5b3a29; }
+.plan-featured { border: 2px solid #e8b04b; }
+
+.plan-fee { font-size: 1.6rem; font-weight: 700; color: #5b3a29; margin: 0.4rem 0 0.8rem; }
+.plan-fee span { font-size: 0.9rem; font-weight: 400; color: #6b6259; }
+
+.plan-card ul { list-style: none; text-align: left; }
+.plan-card li { padding: 0.4rem 0; border-top: 1px solid #e0d6c8; }
+
+.table-wrap { overflow-x: auto; }
+tbody tr:nth-child(even) { background: #faf7f2; }
+
+.membership-rules ul,
+.membership-how ol { padding-left: 1.4rem; }
+.membership-rules li,
+.membership-how li { margin-bottom: 0.5rem; }
+
+@media (max-width: 480px) {
+  .plan-fee { font-size: 1.3rem; }
+  .membership-rules ul,
+  .membership-how ol { padding-left: 1.1rem; }
+  th, td { padding: 0.5rem; font-size: 0.9rem; }
+}
