@@ -25,3 +25,140 @@ footer { text-align: center; padding: 1.2rem; background: #2d2a26; color: #ccc; 
   .card-grid { grid-template-columns: 1fr; }
   .hero h2 { font-size: 1.5rem; }
 }
+/* ===== MEMBERSHIP PAGE (feature/membership-page) ===== */
+
+/* Intro banner */
+.membership-intro {
+  text-align: center;
+  background: #fff;
+  border-left: 6px solid #e8b04b;
+  border-radius: 8px;
+  padding: 1.8rem 1.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+.membership-intro p { max-width: 650px; margin: 0 auto; color: #6b6259; }
+
+/* Plan cards */
+.plan-card {
+  position: relative;
+  text-align: center;
+  border: 1px solid #e0d6c8;
+  border-top: 5px solid #5b3a29;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.plan-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+}
+.plan-card h3 { color: #5b3a29; font-size: 1.3rem; }
+
+.plan-featured { border: 2px solid #e8b04b; border-top: 5px solid #e8b04b; }
+.plan-featured::before {
+  content: "Most Popular";
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #e8b04b;
+  color: #2d2a26;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.2rem 0.8rem;
+  border-radius: 999px;
+}
+
+.plan-fee { font-size: 2rem; font-weight: 700; color: #5b3a29; margin: 0.5rem 0 1rem; }
+.plan-fee span { font-size: 0.9rem; font-weight: 400; color: #6b6259; }
+
+.plan-card ul { list-style: none; text-align: left; }
+.plan-card li {
+  padding: 0.5rem 0 0.5rem 1.6rem;
+  border-top: 1px solid #e0d6c8;
+  position: relative;
+}
+.plan-card li::before {
+  content: "\2713";
+  position: absolute;
+  left: 0;
+  color: #e8b04b;
+  font-weight: 700;
+}
+
+/* Comparison table */
+.table-wrap {
+  overflow-x: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+tbody tr:nth-child(even) { background: #faf7f2; }
+tbody tr:hover { background: #f3e7cf; }
+td:first-child { font-weight: 600; color: #5b3a29; }
+
+/* Late-return rules */
+.membership-rules ul { list-style: none; }
+.membership-rules li {
+  background: #fff;
+  border-left: 4px solid #e8b04b;
+  border-radius: 6px;
+  padding: 0.8rem 1rem;
+  margin-bottom: 0.7rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+}
+
+/* How to join: numbered steps */
+.membership-how ol { list-style: none; counter-reset: step; }
+.membership-how li {
+  counter-increment: step;
+  position: relative;
+  padding: 0.4rem 0 0.4rem 3rem;
+  margin-bottom: 0.8rem;
+}
+.membership-how li::before {
+  content: counter(step);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 2.1rem;
+  height: 2.1rem;
+  line-height: 2.1rem;
+  text-align: center;
+  background: #5b3a29;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 50%;
+}
+
+/* Call to action */
+.membership-cta {
+  text-align: center;
+  background: #5b3a29;
+  color: #fff;
+  border-radius: 8px;
+  padding: 2rem 1.5rem;
+}
+.membership-cta h2 { color: #e8b04b; }
+.membership-cta p { margin-bottom: 1rem; }
+.membership-cta .btn {
+  display: inline-block;
+  background: #e8b04b;
+  color: #2d2a26;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 0.7rem 1.6rem;
+  border-radius: 6px;
+  transition: background 0.2s ease;
+}
+.membership-cta .btn:hover { background: #fff; }
+
+/* Tablet */
+@media (max-width: 768px) {
+  .plan-card { margin-top: 0.6rem; }
+  .membership-intro { padding: 1.4rem 1rem; }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .plan-fee { font-size: 1.6rem; }
+  th, td { padding: 0.5rem; font-size: 0.9rem; }
+  .membership-how li { padding-left: 2.7rem; }
+}
