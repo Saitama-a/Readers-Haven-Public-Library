@@ -387,8 +387,9 @@ td:first-child { font-weight: 600; color: #5b3a29; }
   th, td { padding: 0.5rem; font-size: 0.9rem; }
   .membership-how li { padding-left: 2.7rem; }
 }
-,
+
 /* ===== CONTACT & FEEDBACK PAGE ===== */
+
 .contact-hero {
     background: #e8b04b;
     padding: 3rem 2rem;
@@ -531,7 +532,181 @@ td:first-child { font-weight: 600; color: #5b3a29; }
         color: #6b6259;
     }
 
-/* Contact Page Responsive Design */
+
+/* =====================================
+   CONTACT & FEEDBACK PAGE
+===================================== */
+
+/* Hero Section */
+
+.contact-hero {
+    background: #e8b04b;
+    padding: 3rem 2rem;
+    text-align: center;
+    border-radius: 8px;
+}
+
+    .contact-hero h2 {
+        color: #2d2a26;
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .contact-hero p {
+        max-width: 750px;
+        margin: 0 auto;
+        color: #2d2a26;
+        line-height: 1.8;
+    }
+
+/* Contact Information */
+
+.contact-information {
+    margin-top: 2.5rem;
+}
+
+    .contact-information > h2 {
+        text-align: center;
+        margin-bottom: 1.5rem;
+    }
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.2rem;
+}
+
+.contact-card {
+    background: #fff;
+    padding: 1.8rem 1.2rem;
+    border-radius: 8px;
+    border-top: 5px solid #e8b04b;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease;
+}
+
+    .contact-card:hover {
+        transform: translateY(-4px);
+    }
+
+    .contact-card h3 {
+        color: #5b3a29;
+        margin-bottom: 0.8rem;
+        font-size: 1.2rem;
+    }
+
+    .contact-card p {
+        color: #6b6259;
+        overflow-wrap: anywhere;
+    }
+
+/* Feedback Form Section */
+
+.feedback-section {
+    background: #fff;
+    padding: 2.5rem;
+    border-radius: 8px;
+    margin-top: 2.5rem;
+    border-left: 5px solid #e8b04b;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.feedback-heading {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+    .feedback-heading p {
+        color: #6b6259;
+        max-width: 650px;
+        margin: 0 auto;
+    }
+
+/* Form Layout */
+
+.feedback-form {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.3rem;
+}
+
+    .form-group label {
+        color: #5b3a29;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        width: 100%;
+        padding: 0.85rem;
+        border: 1px solid #e0d6c8;
+        border-radius: 6px;
+        background: #faf7f2;
+        color: #2d2a26;
+        font-family: "Segoe UI", Arial, sans-serif;
+        font-size: 1rem;
+    }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #e8b04b;
+            box-shadow: 0 0 5px rgba(232, 176, 75, 0.4);
+        }
+
+    .form-group textarea {
+        resize: vertical;
+    }
+
+/* Submit Button */
+
+.feedback-button {
+    background: #5b3a29;
+    color: #fff;
+    padding: 0.85rem 2rem;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+    .feedback-button:hover {
+        background: #7a5139;
+    }
+
+/* Final Message Section */
+
+.contact-message {
+    background: #f0e5d5;
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+    .contact-message h2 {
+        color: #5b3a29;
+    }
+
+    .contact-message p {
+        max-width: 750px;
+        margin: 0 auto;
+        color: #6b6259;
+        line-height: 1.8;
+    }
+
+/* Responsive Design */
 
 @media (max-width: 768px) {
 
@@ -547,11 +722,32 @@ td:first-child { font-weight: 600; color: #5b3a29; }
         grid-template-columns: 1fr;
     }
 
-    .contact-form-section {
+    .feedback-section {
         padding: 1.5rem 1rem;
     }
 
-    .contact-extra {
+    .contact-message {
         padding: 1.5rem 1rem;
+    }
+
+    .feedback-button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .contact-card {
+        padding: 1.3rem 1rem;
+    }
+
+    .feedback-heading h2 {
+        font-size: 1.4rem;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        font-size: 0.95rem;
     }
 }
