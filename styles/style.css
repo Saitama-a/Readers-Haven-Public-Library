@@ -751,3 +751,200 @@ td:first-child { font-weight: 600; color: #5b3a29; }
         font-size: 0.95rem;
     }
 }
+
+
+/* =====================================
+   COLLECTIONS PAGE STYLING
+===================================== */
+
+/* Collections Hero Section */
+
+.collection-hero {
+  background: #e8b04b;
+  padding: 3rem 2rem;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.collection-hero h2 {
+  color: #2d2a26;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.collection-hero p {
+  max-width: 750px;
+  margin: 0 auto;
+  color: #2d2a26;
+  line-height: 1.8;
+}
+
+/* Category Sections */
+
+.collection-category {
+  margin-top: 2.5rem;
+}
+
+.collection-heading {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.collection-heading h2 {
+  color: #5b3a29;
+  font-size: 1.7rem;
+  margin-bottom: 0.5rem;
+}
+
+.collection-heading p {
+  max-width: 700px;
+  margin: 0 auto;
+  color: #6b6259;
+}
+
+/* Book Grid */
+
+.collection-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.2rem;
+}
+
+/* Individual Book Cards */
+
+.book-card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 1.5rem;
+  border-top: 5px solid #e8b04b;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.book-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+}
+
+.book-icon {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 0.8rem;
+}
+
+.book-card h3 {
+  color: #5b3a29;
+  font-size: 1.15rem;
+  margin-bottom: 0.4rem;
+}
+
+.book-author {
+  color: #a07842;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+}
+
+.book-card p:last-child {
+  color: #6b6259;
+  line-height: 1.7;
+}
+
+/* Closing Message Section */
+
+.collection-message {
+  background: #f0e5d5;
+  padding: 2.5rem 2rem;
+  text-align: center;
+  border-radius: 8px;
+  margin-top: 2.5rem;
+}
+
+.collection-message h2 {
+  color: #5b3a29;
+  margin-bottom: 1rem;
+}
+
+.collection-message p {
+  max-width: 750px;
+  margin: 0 auto 1.5rem;
+  color: #6b6259;
+  line-height: 1.8;
+}
+
+/* Membership Button */
+
+.collection-button {
+  display: inline-block;
+  background: #5b3a29;
+  color: #fff;
+  padding: 0.8rem 1.8rem;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: background 0.2s ease;
+}
+
+.collection-button:hover {
+  background: #7a5139;
+}
+
+/* Tablet Responsive Design */
+
+@media (max-width: 768px) {
+
+  .collection-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .collection-hero {
+    padding: 2rem 1rem;
+  }
+
+  .collection-hero h2 {
+    font-size: 1.5rem;
+  }
+
+  .collection-heading h2 {
+    font-size: 1.4rem;
+  }
+
+  .book-card {
+    padding: 1.2rem;
+  }
+
+  .collection-message {
+    padding: 2rem 1rem;
+  }
+}
+
+/* Mobile Responsive Design */
+
+@media (max-width: 480px) {
+
+  .collection-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .collection-hero h2 {
+    font-size: 1.4rem;
+  }
+
+  .book-card h3 {
+    font-size: 1.1rem;
+  }
+
+  .collection-category {
+    margin-top: 2rem;
+  }
+
+  .collection-message h2 {
+    font-size: 1.4rem;
+  }
+
+  .collection-button {
+    width: 100%;
+    text-align: center;
+  }
+}
