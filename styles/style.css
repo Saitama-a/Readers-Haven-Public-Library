@@ -488,10 +488,9 @@ footer p {
         animation-duration: 0.01ms !important;
     }
 }
-=======
   .hero h1 { font-size: 1.6rem; }
   .info-row { grid-template-columns: 1fr; }
-}
+
 * {
   box-sizing: border-box;
   margin: 0;
