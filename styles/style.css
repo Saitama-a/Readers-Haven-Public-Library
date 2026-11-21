@@ -1,29 +1,303 @@
+
+/* =====================================
+   READERS' HAVEN - GLOBAL STYLES
+===================================== */
+
+:root {
+    --primary: #183b4e;
+    --secondary: #27566b;
+    --accent: #d97745;
+    --background: #f7f5ef;
+    --white: #ffffff;
+    --text: #29343b;
+    --muted: #687780;
+    --border: #e5e2d9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: var(--background);
+    color: var(--text);
+    line-height: 1.7;
+}
+
+/* =====================================
+   HEADER AND NAVIGATION
+===================================== */
+
+header {
+    background: var(--primary);
+    color: var(--white);
+    padding: 1.3rem 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.12);
+}
+
+header h1 {
+    color: var(--white);
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+}
+
+nav {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: #e7edf0;
+    text-decoration: none;
+    padding: 0.55rem 0.9rem;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+    background: var(--accent);
+    color: var(--white);
+}
+
+/* =====================================
+   MAIN CONTENT
+===================================== */
+
+main {
+    max-width: 1200px;
+    width: 90%;
+    margin: 2.5rem auto;
+}
+
+section {
+    margin-bottom: 3rem;
+}
+
+section h2 {
+    color: var(--primary);
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+section > p {
+    color: var(--muted);
+    font-size: 1.05rem;
+}
+
+/* =====================================
+   HERO SECTION
+===================================== */
+
 .hero {
-  background: linear-gradient(135deg, var(--primary), #34495e);
-  color: #fff;
-  text-align: center;
-  padding: 3.5rem 1.5rem;
-  border-radius: 10px;
+    background: linear-gradient(135deg, #183b4e, #34758a);
+    color: var(--white);
+    text-align: center;
+    padding: 5rem 2rem;
+    border-radius: 15px;
+    margin-bottom: 3rem;
+    box-shadow: 0 8px 25px rgba(24,59,78,0.15);
 }
-.hero h1 { color: #fff; font-size: 2.2rem; }
-.hero p { font-size: 1.1rem; margin-bottom: 1.5rem; }
+
+.hero h1 {
+    color: var(--white);
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    color: #e6eff2;
+    font-size: 1.15rem;
+    max-width: 650px;
+    margin: 0 auto 2rem;
+}
+
+/* =====================================
+   BUTTONS
+===================================== */
+
 .btn {
-  display: inline-block;
-  background: var(--accent);
-  color: #fff;
-  padding: 0.7rem 1.6rem;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: 600;
+    display: inline-block;
+    background: var(--accent);
+    color: var(--white);
+    padding: 0.8rem 1.8rem;
+    border-radius: 7px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
 }
-.btn:hover { background: #a93226; }
-.card a { color: var(--accent); text-decoration: none; font-weight: 600; }
-.info-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
-.hours { width: 100%; border-collapse: collapse; }
-.hours td { padding: 0.4rem 0; border-bottom: 1px solid #eee; }
-.hours td:last-child { text-align: right; font-weight: 500; }
+
+.btn:hover {
+    background: #bd6033;
+    transform: translateY(-3px);
+}
+
+/* =====================================
+   CARD GRID
+===================================== */
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.card {
+    background: var(--white);
+    padding: 1.8rem;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.04);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.09);
+}
+
+.card h3 {
+    color: var(--primary);
+    font-size: 1.3rem;
+    margin-bottom: 0.7rem;
+}
+
+.card p {
+    color: var(--muted);
+    margin-bottom: 1rem;
+}
+
+.card a {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
+
+/* =====================================
+   LOCATION AND OPENING HOURS
+===================================== */
+
+.info-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.info-row .card {
+    padding: 2rem;
+}
+
+.hours {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.hours td {
+    padding: 0.8rem 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.hours td:last-child {
+    text-align: right;
+    font-weight: 600;
+    color: var(--primary);
+}
+
+/* =====================================
+   FOOTER
+===================================== */
+
+footer {
+    background: var(--primary);
+    color: #e7edf0;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 4rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* =====================================
+   RESPONSIVE DESIGN
+===================================== */
 
 @media (max-width: 768px) {
-  .hero h1 { font-size: 1.6rem; }
-  .info-row { grid-template-columns: 1fr; }
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    .hero {
+        padding: 3rem 1.2rem;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .info-row {
+        grid-template-columns: 1fr;
+    }
+
+    section h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+
+    main {
+        width: 92%;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    nav a {
+        font-size: 0.85rem;
+        padding: 0.4rem 0.55rem;
+    }
+
+    .hero h1 {
+        font-size: 1.65rem;
+    }
+
+    .hero p {
+        font-size: 0.95rem;
+    }
+
+    .card {
+        padding: 1.3rem;
+    }
 }
