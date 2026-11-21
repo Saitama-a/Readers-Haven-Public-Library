@@ -1,23 +1,157 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Readers' Haven | Contact</title>
-  <link rel="stylesheet" href="../styles/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & Feedback | Readers' Haven</title>
+
+    <link rel="stylesheet" href="../styles/style.css">
 </head>
+
 <body>
-  <header>
-    <h1>📚 Readers' Haven</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="collections.html">Collections</a>
-      <a href="membership.html">Membership</a>
-      <a href="services.html">Digital Services</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
-  <main><h2>Contact</h2><p>Coming soon.</p></main>
-  <footer>&copy; 2026 Readers' Haven Public Library</footer>
+
+    <header>
+        <h1>Readers' Haven</h1>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="collections.html">Collections</a>
+            <a href="membership.html">Membership</a>
+            <a href="services.html">Digital Services</a>
+            <a href="contact.html" class="active">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Contact Hero Section -->
+        <section class="contact-hero">
+            <h2>Get In Touch With Us</h2>
+
+            <p>
+                We would love to hear from you!
+                Contact Readers' Haven for questions,
+                suggestions or feedback. Your opinion
+                helps us improve our library services.
+            </p>
+        </section>
+
+        <!-- Contact Information -->
+        <section class="contact-information">
+
+            <h2>Contact Information</h2>
+
+            <div class="contact-grid">
+
+                <div class="contact-card">
+                    <h3>Our Location</h3>
+                    <p>Johar Town, Lahore, Pakistan</p>
+                </div>
+
+                <div class="contact-card">
+                    <h3>Phone Number</h3>
+                    <p>+92 XXX XXXXXXX</p>
+                </div>
+
+                <div class="contact-card">
+                    <h3>Email Address</h3>
+                    <p>info@readershaven.com</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Feedback Form -->
+        <section class="feedback-section">
+
+            <div class="feedback-heading">
+                <h2>Send Us Your Feedback</h2>
+
+                <p>
+                    Have a question or suggestion?
+                    Fill out the form below and share
+                    your thoughts with us.
+                </p>
+            </div>
+
+            <form class="feedback-form">
+
+                <div class="form-group">
+                    <label for="fullname">Full Name</label>
+
+                    <input
+                        type="text"
+                        id="fullname"
+                        name="fullname"
+                        placeholder="Enter your full name"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email address"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+
+                    <select id="subject" name="subject" required>
+                        <option value="">Choose a subject</option>
+                        <option value="general">General Inquiry</option>
+                        <option value="membership">Membership</option>
+                        <option value="books">Book Collection</option>
+                        <option value="complaint">Complaint</option>
+                        <option value="suggestion">Suggestion</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Your Message</label>
+
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="6"
+                        placeholder="Write your message here..."
+                        required></textarea>
+                </div>
+
+                <button type="submit" class="feedback-button">
+                    Submit Feedback
+                </button>
+
+            </form>
+
+        </section>
+
+        <!-- Additional Information -->
+        <section class="contact-message">
+
+            <h2>We Value Your Feedback!</h2>
+
+            <p>
+                At Readers' Haven, we believe every reader
+                matters. Your suggestions and feedback help
+                us create a better reading experience.
+                Thank you for being part of our community!
+            </p>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Readers' Haven. All Rights Reserved.</p>
+    </footer>
+
 </body>
 </html>
